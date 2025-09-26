@@ -1,4 +1,0 @@
-<body>
-
-<script src="scripts.js"></script>
-</body>
