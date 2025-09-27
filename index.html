@@ -2169,7 +2169,7 @@ h1, h2, h3, h4, h5, h6, .heading-font {
     </label>
   </p>
   <p>
-    <button type="submit">Đăng Ký</button>
+    <button type="submit" class="custom-btn">Đăng Ký</button>
   </p>
 </form>
 
@@ -2211,29 +2211,44 @@ h1, h2, h3, h4, h5, h6, .heading-font {
   </div>
 </div>
 
-<a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline round hide-for-medium" id="top-link" aria-label="Go to top"><i class="icon-angle-up" ></i></a>
+<a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline round hide-for-medium" id="top-link" aria-label="Go to top">
+  <i class="icon-angle-up" ></i>
+</a>
 </footer>
 
 </div>
 
 <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
-
-	
-	<div class="sidebar-menu no-scrollbar ">
-
-		
-					<ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12067 current_page_item menu-item-12122"><a href="index.html" aria-current="page">TRANG CHỦ</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12381">
-	<a href="https://momento360.com/e/u/20fc3f1ce82b41cca7947497204e1eef?heading=-29.68&pitch=-10.23&field-of-view=75&size=medium&display-plan=true&zarsrc=30">360 VIEW</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10588"><a href="index.html#tongquan" aria-current="page">TỔNG QUAN</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10585"><a href="index.html#vitri" aria-current="page">VỊ TRÍ</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10586"><a href="index.html#tienich" aria-current="page">TIỆN ÍCH</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-11817"><a href="index.html#matbang" aria-current="page">MẶT BẰNG</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10738"><a href="index.html#banggia" aria-current="page">BẢNG GIÁ</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11973"><a href="index.html#banggia">TIN TỨC</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10732"><a href="index.html#text-4" aria-current="page">LIÊN HỆ</a></li>
-</ul>
+  <div class="sidebar-menu no-scrollbar ">
+    <ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
+	    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12067 current_page_item menu-item-12122">
+        <a href="index.html" aria-current="page">TRANG CHỦ</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12381">
+	      <a href="https://momento360.com/e/u/20fc3f1ce82b41cca7947497204e1eef?heading=-29.68&pitch=-10.23&field-of-view=75&size=medium&display-plan=true&zarsrc=30">360 VIEW</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10588">
+        <a href="index.html#tongquan" aria-current="page">TỔNG QUAN</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10585">
+        <a href="index.html#vitri" aria-current="page">VỊ TRÍ</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10586">
+        <a href="index.html#tienich" aria-current="page">TIỆN ÍCH</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-11817">
+        <a href="index.html#matbang" aria-current="page">MẶT BẰNG</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10738">
+        <a href="index.html#banggia" aria-current="page">BẢNG GIÁ</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11973">
+        <a href="index.html#banggia">TIN TỨC</a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10732">
+        <a href="index.html#text-4" aria-current="page">LIÊN HỆ</a>
+      </li>
+    </ul>
 	</div>
 </div>
 
@@ -2258,6 +2273,22 @@ h1, h2, h3, h4, h5, h6, .heading-font {
     margin-bottom: 0px;}
  
 }
+@media (max-width: 767px) {
+  .wpcf7-form .wpcf7-submit,
+  .custom-btn {
+    width: 100%;           /* full chiều ngang */
+    display: block;        /* hiển thị dạng block */
+    margin: 15px 0 25px;   /* trên 15px, dưới 25px để thoáng */
+    text-align: center;    /* căn chữ giữa */
+  }
+}
+@media (max-width: 767px) {
+  #contact-form {
+    margin-bottom: 70px;  /* tạo khoảng cách với thanh menu dưới */
+  }
+}
+
+
 </style>
 <div class="bottom-contact">
   <ul>
@@ -2299,9 +2330,6 @@ h1, h2, h3, h4, h5, h6, .heading-font {
     </li>
   </ul>
 </div>
-
-
-
 
 
 <style id='global-styles-inline-css' type='text/css'>
