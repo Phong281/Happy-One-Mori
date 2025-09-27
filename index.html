@@ -1994,6 +1994,33 @@ h1, h2, h3, h4, h5, h6, .heading-font {
   background: #fff;
 }
 
+/* Responsive & căn giữa khối ưu đãi */
+@media (max-width: 767px) {
+  .benefits {
+    flex-direction: column;
+    align-items: center;   /* căn giữa toàn bộ */
+  }
+
+  .benefit-col {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;        /* căn chữ giữa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* căn giữa dọc */
+    align-items: center;       /* căn giữa ngang */
+  }
+
+  .benefit-col:not(:last-child)::after {
+    content: none; /* bỏ gạch dọc */
+  }
+
+  .benefit-col:not(:last-child) {
+    border-bottom: 1px solid #fff; /* gạch ngang phân cách */
+  }
+}
+
+
   </style>
 </section>
 
