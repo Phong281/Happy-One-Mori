@@ -768,14 +768,14 @@ h1, h2, h3, h4, h5, h6, .heading-font {
     </div> 
 <style> 
 #banner-2087868842 { 
-  height: 125vh;              /* full màn hình */
+  height: 110vh;              /* full màn hình */
   width: 100%; 
   position: relative;          /* để chữ bám theo */
   overflow: hidden;
 } 
 
 #banner-2087868842 .bg.bg-loaded { 
-  background-image: url(./assets/img/MORI-ADDLOGO-Full.webp); 
+  background-image: url(./assets/img/MORI-ADDLOGO-1.webp); 
   background-size: contain;    /* hiển thị toàn bộ ảnh */
   background-repeat: no-repeat; 
   background-position: center; 
@@ -786,10 +786,21 @@ h1, h2, h3, h4, h5, h6, .heading-font {
   z-index: 1; 
 } 
 
-/* đảm bảo text nổi lên trên */
-#banner-2087868842 .banner-layers { 
-  position: relative; 
-  z-index: 2; 
+/* lớp phủ tối */
+#banner-2087868842::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.1); /* chỉnh độ tối ở đây */
+  z-index: 2;
+}
+
+/* text hero luôn nằm trên overlay */
+#banner-2087868842 .banner-layers {
+  position: relative;
+  z-index: 3; 
+  text-align: center;
+  color: #fff;  /* chữ trắng */
 }
 
 /* shape-divider nếu muốn giữ */
